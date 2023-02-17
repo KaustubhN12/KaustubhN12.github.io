@@ -1,17 +1,19 @@
-import logo from './logo.svg';
+
+import { Box } from '@chakra-ui/react';
 import './App.css';
+import Home from './Components/Home';
+import Navbar from './Components/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <div id="nav-menu">
-        <li id="home">Home</li>
-        <li id="about" class="about section">about</li>
-        <li id="skills">skill</li>
-        <li id="projects">project</li>
-        <li id="contact">contact</li>
-      </div>
-    </div>
+
+    <Box maxW={"100vw"}>
+      <Navbar />
+      <Box maxWidth={{ base: "96vw", lg: "90vw" }} margin="auto">
+        <Home />
+      </Box>
+    </Box>
+
   );
 }
 
