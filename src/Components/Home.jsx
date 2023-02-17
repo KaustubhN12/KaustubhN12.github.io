@@ -35,7 +35,7 @@ import {
           padding={"5px"}
         >
           <Heading id="user-detail-name">Hi I am Kaustubh</Heading>
-          <Text fontSize={"1.4rem"}>Full stack web develpor</Text>
+          <Text fontSize={"1.4rem"} id="user-detail-intro">Full stack web develpor</Text>
           <Text>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           </Text>
@@ -53,13 +53,13 @@ import {
               </Button>
             </a>
             <Flex gap="3">
-              <Link>
+              <Link id="contact-linkedin" href='https://www.linkedin.com/in/kaustubh-nawade-1307751a0/' isExternal>
                 <ImLinkedin fontSize={"1.6rem"} />
               </Link>
-              <Link>
+              <Link id="contact-github" href="https://github.com/KaustubhN12" isExternal>
                 <FaGithub fontSize={"1.6rem"} />
               </Link>
-              <Link>
+              <Link  id="contact-email" href="https://nawadekaustubh@gmail.com" isExternal>
                 <HiOutlineMail fontSize={"1.6rem"} />
               </Link>
             </Flex>
