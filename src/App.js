@@ -1,8 +1,10 @@
 
 import { Box } from '@chakra-ui/react';
 import './App.css';
+import About from './Components/About';
 import Home from './Components/Home';
 import Navbar from './Components/Navbar';
+import Skills from './Components/Skills';
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Navbar />
       <Box maxWidth={{ base: "96vw", lg: "90vw" }} margin="auto">
         <Home />
+        <About/>
+        <Skills/>
       </Box>
     </Box>
 
