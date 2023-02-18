@@ -21,7 +21,7 @@ const Github = () => {
         gap="7"
       >
         <Box>
-          <Link href="https://github.com/KaustubhN12" />
+          <Link href="https://github.com/KaustubhN12"/>
           <Image
             id="github-streak-stats"
             width="500px"
@@ -29,7 +29,7 @@ const Github = () => {
           />
         </Box>
         <Box>
-          <Link href="https://github.com/KaustubhN12" />
+          <Link href="https://github.com/KaustubhN12"/>
           <Image
             id="github-top-langs"
             width="500px"
@@ -37,7 +37,7 @@ const Github = () => {
           />
         </Box>
         <Box>
-          <Link href="https://github.com/KaustubhN12" />
+          <Link href="https://github.com/KaustubhN12"/>
           <Image
             width="500px"
             id="github-stats-card"

@@ -12,6 +12,7 @@ import { MoonIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
 // import Sidebar from "./Sidebar";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Helmet } from "react-helmet";
+import Kaustubh_Nawade_Resume from "../Kaustubh_Nawade_Resume.pdf"
 
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -66,16 +67,17 @@ const Navbar = () => {
           <Link onClick={()=>setTitle("Contact")} href="#contact" className="nav-link contact">
             contact
           </Link>
+          <a id="resume-link-1" target="_blank" href={Kaustubh_Nawade_Resume} download>
           <Button
             className="nav-link resume"
             colorScheme={"teal"}
-            id="resume-button-1"
           >
             Resume
             <Text as="span" ml={"2"}>
               <AiOutlineDownload fontSize={"1.2rem"} />
             </Text>
           </Button>
+          </a>
           <Button onClick={toggleColorMode}>
             {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
           </Button>

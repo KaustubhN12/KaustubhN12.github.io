@@ -13,7 +13,7 @@ import {
   import { FaGithub } from "react-icons/fa";
   import { HiOutlineMail } from "react-icons/hi";
   import { AiOutlineArrowDown, AiOutlineDownload } from "react-icons/ai";
-
+  import Kaustubh_Nawade_Resume from "../Kaustubh_Nawade_Resume.pdf"
 
 
   // import img from "./userPic.png";
@@ -43,7 +43,7 @@ import {
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           </Text>
           <Flex gap={"8"} align="center">
-            <a target="_blank"  download>
+            <a id="resume-link-2" target="_blank" href={Kaustubh_Nawade_Resume}  download>
               <Button
                 id="resume-button-2"
                 width="max-content"

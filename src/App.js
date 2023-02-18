@@ -2,6 +2,7 @@
 import { Box } from '@chakra-ui/react';
 import './App.css';
 import About from './Components/About';
+import Contact from './Components/Contact';
 import Github from './Components/Github';
 import Home from './Components/Home';
 import Navbar from './Components/Navbar';
@@ -19,7 +20,7 @@ function App() {
         <Projects/>
         <Github/>
       </Box>
-      
+      <Contact/>
     </Box>
     </>
   );
