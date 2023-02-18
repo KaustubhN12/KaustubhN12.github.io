@@ -71,6 +71,7 @@ const Navbar = () => {
           <Button
             className="nav-link resume"
             colorScheme={"teal"}
+            id="resume-button-1"
           >
             Resume
             <Text as="span" ml={"2"}>

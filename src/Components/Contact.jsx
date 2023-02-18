@@ -54,6 +54,7 @@ import { FaGithub } from 'react-icons/fa';
                       <VStack pl={0} spacing={3} alignItems="flex-start">
                         <Button
                           size="md"
+                          id="contact-phone"
                           height="48px"
                           variant="ghost"
                           color="#DCE2FF"
@@ -66,6 +67,7 @@ import { FaGithub } from 'react-icons/fa';
                           height="48px"
                           variant="ghost"
                           color="#DCE2FF"
+                          id="contact-email"
                           _hover={{ border: '2px solid #1C6FEB' }}
                           leftIcon={<MdEmail color="#1970F1" size="20px" />}>
                           nawadekaustubh@gmail.com

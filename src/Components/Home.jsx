@@ -38,8 +38,8 @@ import {
           padding={"5px"}
         >
           <Heading id="user-detail-name">Hi I am Kaustubh</Heading>
-          <Text fontSize={"1.4rem"} id="user-detail-intro">Full stack web develpor</Text>
-          <Text>
+          <Text fontSize={"1.4rem"}>Full stack web develpor</Text>
+          <Text  id="user-detail-intro">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           </Text>
           <Flex gap={"8"} align="center">
