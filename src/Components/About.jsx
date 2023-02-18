@@ -22,7 +22,7 @@ const About = () => {
     margin="auto"
     >    
      <Box width="35%">
-      <Image margin="auto" border="4px solid teal" borderRadius="50%" src="https://i.ibb.co/D1QhFKy/portfolio-profile-pic.jpg"/>
+      <Image  className="home-img" margin="auto" border="4px solid teal" borderRadius="50%" src="https://i.ibb.co/D1QhFKy/portfolio-profile-pic.jpg"/>
      </Box>
      <Box padding="50px" alignItems="center" alignContent="center" height="100%" width="65%">
        <Box alignItems="center" >

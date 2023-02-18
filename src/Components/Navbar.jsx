@@ -7,15 +7,23 @@ import {
   Text,
   useColorMode,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 import { MoonIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
 // import Sidebar from "./Sidebar";
 import { AiOutlineDownload } from "react-icons/ai";
+import { Helmet } from "react-helmet";
 
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
-  console.log(colorMode);
+  const [title,setTitle] = useState("Home");
+
   return (
+    <>
+       <div>
+      <Helmet>
+        <title>{`Kaustubh | ${title}`}</title>
+      </Helmet>
+      </div>
     <Box id="nav-menu" pos={"sticky"} top="0" textTransform={"capitalize"}>
       <Flex
         justify={"space-between"}
@@ -43,19 +51,19 @@ const Navbar = () => {
           align={"center"}
           marginRight="2rem"
         >
-          <Link href="#home" className="nav-link home">
+          <Link onClick={()=>setTitle("Home")} href="#home" className="nav-link home">
             home
           </Link>
-          <Link href="#about" className="nav-link about">
+          <Link onClick={()=>setTitle("About")} href="#about" className="nav-link about">
             about
           </Link>
-          <Link href="#skills" className="nav-link skills">
+          <Link onClick={()=>setTitle("Skills")} href="#skills" className="nav-link skills">
             skills
           </Link>
-          <Link href="#projects" className="nav-link projects">
+          <Link onClick={()=>setTitle("Projects")} href="#projects" className="nav-link projects">
             projects
           </Link>
-          <Link href="#contact" className="nav-link contact">
+          <Link onClick={()=>setTitle("Contact")} href="#contact" className="nav-link contact">
             contact
           </Link>
           <Button
@@ -77,6 +85,7 @@ const Navbar = () => {
         </Box> */}
       </Flex>
     </Box>
+    </>
   );
 };
 

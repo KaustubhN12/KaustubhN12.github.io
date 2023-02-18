@@ -14,9 +14,12 @@ import {
   import { HiOutlineMail } from "react-icons/hi";
   import { AiOutlineArrowDown, AiOutlineDownload } from "react-icons/ai";
 
+
+
   // import img from "./userPic.png";
   const Home = () => {
     return (
+      <>
       <Flex
         height={{ base: "80vh", lg: "100vh" }}
         maxHeight={"750px"}
@@ -88,6 +91,7 @@ import {
           />
         </Box>
       </Flex>
+      </>
     );
   };
   
