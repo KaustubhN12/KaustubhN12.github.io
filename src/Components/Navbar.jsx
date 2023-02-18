@@ -3,9 +3,9 @@ import {
   Button,
   Flex,
   Image,
-  Link,
   Text,
   useColorMode,
+  Link
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { MoonIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
@@ -55,10 +55,11 @@ const Navbar = () => {
           <Link onClick={()=>setTitle("Home")} href="#home" className="nav-link home">
             home
           </Link>
-          <Link onClick={()=>setTitle("About")} href="#about" className="nav-link about">
+          <Link onClick={()=>setTitle("About")} href="#about" className="nav-link about" >
             about
           </Link>
-          <Link onClick={()=>setTitle("Skills")} href="#skills" className="nav-link skills">
+          <Link onClick={()=>setTitle("Skills")} href="#skills" className="nav-link skills"
+          >
             skills
           </Link>
           <Link onClick={()=>setTitle("Projects")} href="#projects" className="nav-link projects">

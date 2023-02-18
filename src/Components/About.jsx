@@ -12,11 +12,9 @@ import {
 const About = () => {
   return (
     <>
-   <Text fontSize="4xl" fontWeight="600"  margin="auto" textAlign="center" >About me</Text>
+   <Text fontSize="4xl" fontWeight="600"   id="about" className="about section"  margin="auto" textAlign="center" >About me</Text>
     <Flex 
-    className="about section"
-    id="about"
-    height="65vh"
+    height="55vh"
     border="1px solid red"
     width="85%"
     margin="auto"
@@ -26,8 +24,8 @@ const About = () => {
      </Box>
      <Box padding="50px" alignItems="center" alignContent="center" height="100%" width="65%">
        <Box alignItems="center" >
-       <Text >
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+       <Text id="user-detail-intro" >
+       Aspiring Full Stack Web Developer Skilled in MERN stack with hands-on experience in developing scalable websites using a wide range of Front-end and Back-end skills like HTML, CSS, JavaScript, React, MongoDB, and Node JS. Looking forward to joining a progressive organization with opportunities to work on challenging projects.
           </Text>
        </Box>
       </Box>

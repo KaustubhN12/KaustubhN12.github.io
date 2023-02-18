@@ -54,13 +54,12 @@ const Projects = () => {
 
   return (
     <>
-        <Text fontSize="4xl" fontWeight="600"  margin="auto" textAlign="center" >Projects</Text>
-     <Box height="130vh" 
+        <Text id="projects" fontSize="4xl" fontWeight="600"  margin="auto" textAlign="center" >Projects</Text>
+     <Box height="120vh" 
      border="1px solid yellow" 
      display="grid" 
      gridTemplateColumns="repeat(3,1fr)"
      gap="20px"
-     id="projects"
      >
         {
             projects.map((el)=>{
