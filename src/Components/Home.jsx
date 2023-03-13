@@ -43,8 +43,7 @@ import {
           Aspiring Full Stack Web Developer Skilled in MERN stack with hands-on experience in developing scalable websites using a wide range of Front-end and Back-end skills like HTML, CSS, JavaScript, React, MongoDB, and Node JS. Looking forward to joining a progressive organization with opportunities to work on challenging projects.
           </Text>
           <Flex gap={"8"} align="center">
-            <a id="resume-link-2" target="_blank" 
-            href={Kaustubh_Nawade_Resume} 
+            <a id="resume-link-2" href={Kaustubh_Nawade_Resume} 
             download
              >
               <Button
