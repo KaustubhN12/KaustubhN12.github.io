@@ -18,6 +18,11 @@ import {
 
   // import img from "./userPic.png";
   const Home = () => {
+
+    // const openResume = () =>{
+    //   window.open("https://drive.google.com/file/d/1H8W7AGE1t3B0WIe_Z8iOtpkGf4pvI2Ab/view?usp=share_link","_blank");
+    // }
+
     return (
       <>
       <Flex
@@ -43,20 +48,22 @@ import {
           Aspiring Full Stack Web Developer Skilled in MERN stack with hands-on experience in developing scalable websites using a wide range of Front-end and Back-end skills like HTML, CSS, JavaScript, React, MongoDB, and Node JS. Looking forward to joining a progressive organization with opportunities to work on challenging projects.
           </Text>
           <Flex gap={"8"} align="center">
-            <a id="resume-link-2" href={Kaustubh_Nawade_Resume} 
-            download
-             >
               <Button
                 width="max-content"
                 colorScheme={"teal"}
                 id="resume-button-2"
+                onClick={()=>{
+                  window.open("https://drive.google.com/file/d/1H8W7AGE1t3B0WIe_Z8iOtpkGf4pvI2Ab/view?usp=share_link","_blank");
+                }}
               >
-                Resume
+                 <a id="resume-link-2" href={Kaustubh_Nawade_Resume} target='_blank' download="Kaustubh_Nawade_Resume">
+                 Resume
+                 </a>    
                 <Text as="span" ml={"2"}>
                   <AiOutlineDownload fontSize={"1.2rem"} />
                 </Text>
               </Button>
-            </a>
+        
             <Flex gap="3">
               <Link id="contact-linkedin" href='https://www.linkedin.com/in/kaustubh-nawade-1307751a0/' isExternal>
                 <ImLinkedin fontSize={"1.6rem"} />
