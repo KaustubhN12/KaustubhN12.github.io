@@ -68,18 +68,22 @@ const Navbar = () => {
           <Link onClick={()=>setTitle("Contact")} href="#contact" className="nav-link contact">
             contact
           </Link>
-          <a id="resume-link-1" target="_blank" href={Kaustubh_Nawade_Resume} download>
           <Button
-            className="nav-link resume"
-            colorScheme={"teal"}
-            id="resume-button-1"
-          >
-            Resume
-            <Text as="span" ml={"2"}>
-              <AiOutlineDownload fontSize={"1.2rem"} />
-            </Text>
-          </Button>
-          </a>
+                width="max-content"
+                colorScheme={"teal"}
+                id="resume-button-1"
+                className="nav-link resume"
+                onClick={()=>{
+                  window.open("https://drive.google.com/file/d/1H8W7AGE1t3B0WIe_Z8iOtpkGf4pvI2Ab/view?usp=share_link","_blank");
+                }}
+              >
+                 <a id="resume-link-1" href={Kaustubh_Nawade_Resume} target='_blank' download="Kaustubh_Nawade_Resume.pdf">
+                 Resume
+                 </a>    
+                <Text as="span" ml={"2"}>
+                  <AiOutlineDownload fontSize={"1.2rem"} />
+                </Text>
+              </Button>
           <Button onClick={toggleColorMode}>
             {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
           </Button>
