@@ -25,7 +25,7 @@ const Navbar = () => {
           <title>{`Kaustubh | ${title}`}</title>
         </Helmet>
       </div>
-      <Box id="nav-menu" pos={"sticky"} top="0" textTransform={"capitalize"}>
+      <Box id="nav-menu" pos={"sticky"} zIndex="7" top="0" textTransform={"capitalize"}>
         <Flex
           justify={"space-between"}
           height="4rem"

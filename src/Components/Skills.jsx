@@ -112,43 +112,69 @@ const Skills = () => {
     },
     {
       id: 7,
+      name: "TypeScript",
+      image: "https://img.icons8.com/color/256/typescript.png",
+    },
+    {
+      id: 8,
+      name: "tailwind",
+      image: "https://img.icons8.com/color/256/tailwindcss.png",
+    },
+    {
+      id: 9,
+      name: "Github",
+      image: "https://img.icons8.com/bubbles/256/github.png",
+    },
+  ];
+
+  const backEndSkills = [
+    {
+      id: 1,
       name: "Node.js",
       image: "https://img.icons8.com/color/1x/nodejs.png",
     },
     {
-      id: 8,
+      id: 2,
       name: "Express.js",
-      image: "https://img.icons8.com/color/1x/css3.png",
+      image: "https://img.icons8.com/office/256/express-js.png",
+    },
+    {
+      id: 3,
+      name: "Firebase",
+      image: "https://img.icons8.com/color/256/firebase.png",
+    },
+    {
+      id: 4,
+      name: "Netlify",
+      image:
+        "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/256/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png",
+    },
+    {
+      id: 5,
+      name: "Mongoose",
+      image: "https://img.icons8.com/color/256/mongoose.png",
+    },
+    {
+      id: 6,
+      name: "Git",
+      image: "https://img.icons8.com/color/256/git.png",
+    },
+
+    {
+      id: 7,
+      name: "MongoDB",
+      image:
+        "https://cdn.iconscout.com/icon/free/png-512/mongodb-3-1175138.png?f=avif&w=256",
+    },
+    {
+      id: 8,
+      name: "npm",
+      image: "https://img.icons8.com/color/256/npm.png",
     },
     {
       id: 9,
-      name: "Javascript",
-      image: "https://img.icons8.com/color/1x/javascript.png",
-    },
-    {
-      id: 10,
-      name: "React",
-      image: "https://img.icons8.com/color/1x/react-native.png",
-    },
-    {
-      id: 11,
-      name: "Redux",
-      image: "https://img.icons8.com/color/1x/redux.png",
-    },
-    {
-      id: 12,
-      name: "Firebase",
-      image: "https://img.icons8.com/color/1x/firebase.png",
-    },
-    {
-      id: 13,
-      name: "Github",
-      image: "https://img.icons8.com/windows/2x/github.png",
-    },
-    {
-      id: 14,
-      name: "Tailwind",
-      image: "https://img.icons8.com/color/1x/tailwindcss.png",
+      name: "Vercel",
+      image: "https://cdn.worldvectorlogo.com/logos/vercel.svg",
     },
   ];
   return (
@@ -184,7 +210,7 @@ const Skills = () => {
 
         <Box className="mainContainer" marginTop={"10px"}>
           <Slider {...settings1}>
-            {Skills.map((el) => {
+            {backEndSkills.map((el) => {
               return (
                 <Box
                   key={el.id}

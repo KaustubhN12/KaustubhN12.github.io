@@ -75,7 +75,7 @@ const Projects = () => {
         Projects
       </Text>
       <Box
-        height={["340vh", "190vh", "130vh"]}
+        height={["315vh", "190vh", "130vh"]}
         display="grid"
         gridTemplateColumns={[
           "repeat(1,1fr)",

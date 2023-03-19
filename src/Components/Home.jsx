@@ -26,6 +26,7 @@ const Home = () => {
         align={"center"}
         justify="center"
         gap={{ base: "4", md: "6", lg: "8" }}
+        marginBottom={["40px","0px","0px"]}
       >
         <Flex
           maxWidth={{ base: "100%", lg: "40%" }}
