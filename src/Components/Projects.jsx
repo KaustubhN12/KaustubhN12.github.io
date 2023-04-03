@@ -43,13 +43,21 @@ const Projects = () => {
     },
     {
       id: 4,
-      name: "Fitness Blender",
+      name: "DoorStep",
       description:
-        "Fitness Blender is a fitness website that provides workout programs for fitness",
-      image: "https://i.ibb.co/Ydhvg24/Screenshot-1848.png",
-      techStack: ["HTML", "CSS", "Javascript"],
-      github: "https://github.com/MrVivek30/violet-support-6758",
-      demo: "https://relaxed-douhua-b76152.netlify.app/",
+        "DoorStep is MERN Stack web application which is a clone of Nearbuy.com that allows you to buy voucher and coupons.",
+      image: "https://i.ibb.co/4Sw5vXY/Screenshot-2082.png",
+      techStack: [
+        "React Js",
+        "Redux-Thunk",
+        "Firebase",
+        "chakra ui",
+        "Node.js",
+        "Mongo-DB",
+        "jwt-Authentication"
+      ],
+      github: "https://github.com/KaustubhN12/dizzy-stitch-9009",
+      demo: "https://doorstep-iota.vercel.app/",
     },
     {
       id: 5,
@@ -75,7 +83,7 @@ const Projects = () => {
         Projects
       </Text>
       <Box
-        height={["315vh", "190vh", "130vh"]}
+        height={["355vh", "190vh", "140vh"]}
         display="grid"
         gridTemplateColumns={[
           "repeat(1,1fr)",

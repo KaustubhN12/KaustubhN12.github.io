@@ -29,13 +29,34 @@ import { BsGithub, BsDiscord, BsPerson } from "react-icons/bs";
 import { ImLinkedin } from "react-icons/im";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
+import { useState } from "react";
 
 export default function Contact() {
+
+  const [name,setName] = useState("");
+  const [email,setEmail] = useState("");
+  const [msg,setMsg] = useState("");
+
+  const handleSubmit = () => {
+
+    if(name==""||email==""||msg==""){
+      alert("plz fill all the fields");
+      return
+    }
+
+    const payload={
+      name,
+      email,
+      msg
+    }
+    console.log(payload);
+  }
+
   return (
     <Container maxW="full" mt={0} centerContent overflow="hidden" id="contact">
       <Flex>
         <Box
-          bg="#02054B"
+          bg="#1a202c"
           color="white"
           borderRadius="lg"
           m={{ sm: 4, md: 16, lg: 10 }}
@@ -57,8 +78,8 @@ export default function Contact() {
                         height="48px"
                         variant="ghost"
                         color="#DCE2FF"
-                        _hover={{ border: "2px solid #1C6FEB" }}
-                        leftIcon={<MdPhone color="#1970F1" size="20px" />}
+                        _hover={{ border: "2px solid #81e6d9" }}
+                        leftIcon={<MdPhone color="#81e6d9" size="20px" />}
                       >
                         +91-9834143462
                       </Button>
@@ -68,8 +89,8 @@ export default function Contact() {
                         variant="ghost"
                         color="#DCE2FF"
                         id="contact-email"
-                        _hover={{ border: "2px solid #1C6FEB" }}
-                        leftIcon={<MdEmail color="#1970F1" size="20px" />}
+                        _hover={{ border: "2px solid #81e6d9" }}
+                        leftIcon={<MdEmail color="#81e6d9" size="20px" />}
                       >
                         nawadekaustubh@gmail.com
                       </Button>
@@ -78,8 +99,8 @@ export default function Contact() {
                         height="48px"
                         variant="ghost"
                         color="#DCE2FF"
-                        _hover={{ border: "2px solid #1C6FEB" }}
-                        leftIcon={<MdLocationOn color="#1970F1" size="20px" />}
+                        _hover={{ border: "2px solid #81e6d9" }}
+                        leftIcon={<MdLocationOn color="#81e6d9" size="20px" />}
                       >
                         Wardha, India
                       </Button>
@@ -116,17 +137,17 @@ export default function Contact() {
                 </Box>
               </WrapItem>
               <WrapItem>
-                <Box bg="white" borderRadius="lg">
-                  <Box m={8} color="#0B0E3F">
+                <Box bg="#1a202c" borderRadius="lg">
+                  <Box m={8}>
                     <VStack spacing={5}>
                       <FormControl id="name">
-                        <FormLabel>Your Name</FormLabel>
+                        <FormLabel>Name</FormLabel>
                         <InputGroup borderColor="#E0E1E7">
                           <InputLeftElement
                             pointerEvents="none"
                             children={<BsPerson color="gray.800" />}
                           />
-                          <Input type="text" size="md" />
+                          <Input value={name} onChange={(e)=>setName(e.target.value)} required borderColor={"teal"} type="text" placeholder="Enter your name" size="md" />
                         </InputGroup>
                       </FormControl>
                       <FormControl id="name">
@@ -136,13 +157,12 @@ export default function Contact() {
                             pointerEvents="none"
                             children={<MdOutlineEmail color="gray.800" />}
                           />
-                          <Input type="text" size="md" />
+                          <Input value={email} onChange={(e)=>setEmail(e.target.value)} required borderColor={"teal"} type="email" placeholder="Enter you email" size="md" />
                         </InputGroup>
                       </FormControl>
                       <FormControl id="name">
                         <FormLabel>Message</FormLabel>
-                        <Textarea
-                          borderColor="gray.300"
+                        <Textarea value={msg} onChange={(e)=>setMsg(e.target.value)} required borderColor={"teal"}
                           _hover={{
                             borderRadius: "gray.300",
                           }}
@@ -151,10 +171,9 @@ export default function Contact() {
                       </FormControl>
                       <FormControl id="name" float="right">
                         <Button
-                          variant="solid"
-                          bg="#0D74FF"
-                          color="white"
-                          _hover={{}}
+                          colorScheme={"teal"}
+                          _hover={{boxShadow:"lg"}}
+                          onClick={handleSubmit}
                         >
                           Send Message
                         </Button>
