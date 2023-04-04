@@ -30,36 +30,32 @@ import { ImLinkedin } from "react-icons/im";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
 import { useState } from "react";
-import emailjs from "emailjs-com"
+import emailjs from "emailjs-com";
+import { useToast } from '@chakra-ui/react'
 
 export default function Contact() {
 
-  const [name,setName] = useState("");
-  const [email,setEmail] = useState("");
-  const [msg,setMsg] = useState("");
+  const toast = useToast();
 
-  // const handleSubmit = () => {
+  const handleSubmit = async(e) => {
 
-  //   if(name==""||email==""||msg==""){
-  //     alert("plz fill all the fields");
-  //     return
-  //   }
+      e.preventDefault();
 
-  //   // const payload={
-  //   //   name,
-  //   //   email,
-  //   //   msg
-  //   // }
-  //   // console.log(payload);
+  await emailjs.sendForm('service_pym1c3f', 'template_npcgdkl', e.target, 'Rb41FcMq-fbDOZtmM')
+    .then((result) => {
+      toast({
+        title: 'Message send Successfully.',
+        status: 'success',
+        duration: 9000,
+        isClosable: true,
+      })
+    }, (error) => {
+        console.log(error.text);
+    });
 
-  //   emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-  //   .then((result) => {
-  //       console.log(result.text);
-  //   }, (error) => {
-  //       console.log(error.text);
-  //   });
-
-  // }
+    e.target.reset();
+    
+  }
 
   return (
     <Container maxW="full" mt={0} centerContent overflow="hidden" id="contact">
@@ -149,6 +145,7 @@ export default function Contact() {
                 <Box bg="#1a202c" borderRadius="lg">
                   <Box m={8}>
                     <VStack spacing={5}>
+                      <form onSubmit={handleSubmit} >
                       <FormControl id="name">
                         <FormLabel>Name</FormLabel>
                         <InputGroup borderColor="#E0E1E7">
@@ -156,7 +153,7 @@ export default function Contact() {
                             pointerEvents="none"
                             children={<BsPerson color="gray.800" />}
                           />
-                          <Input value={name} onChange={(e)=>setName(e.target.value)} required borderColor={"teal"} type="text" placeholder="Enter your name" size="md" />
+                          <Input name="user_name"  required borderColor={"teal"} type="text" placeholder="Enter your name" size="md" />
                         </InputGroup>
                       </FormControl>
                       <FormControl id="name">
@@ -166,12 +163,12 @@ export default function Contact() {
                             pointerEvents="none"
                             children={<MdOutlineEmail color="gray.800" />}
                           />
-                          <Input value={email} onChange={(e)=>setEmail(e.target.value)} required borderColor={"teal"} type="email" placeholder="Enter you email" size="md" />
+                          <Input name="user_email"  required borderColor={"teal"} type="email" placeholder="Enter you email" size="md" />
                         </InputGroup>
                       </FormControl>
                       <FormControl id="name">
                         <FormLabel>Message</FormLabel>
-                        <Textarea value={msg} onChange={(e)=>setMsg(e.target.value)} required borderColor={"teal"}
+                        <Textarea name="message" required borderColor={"teal"}
                           _hover={{
                             borderRadius: "gray.300",
                           }}
@@ -180,13 +177,15 @@ export default function Contact() {
                       </FormControl>
                       <FormControl id="name" float="right">
                         <Button
+                        type="submit"
+                        marginTop={"15px"}
                           colorScheme={"teal"}
                           _hover={{boxShadow:"lg"}}
-                          // onClick={handleSubmit}
                         >
                           Send Message
                         </Button>
                       </FormControl>
+                      </form>
                     </VStack>
                   </Box>
                 </Box>
