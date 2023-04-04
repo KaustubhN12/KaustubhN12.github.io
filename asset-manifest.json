@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9c396554.css",
-    "main.js": "/static/js/main.ac212775.js",
+    "main.js": "/static/js/main.ded701b1.js",
     "static/js/787.00faa099.chunk.js": "/static/js/787.00faa099.chunk.js",
     "static/media/Kaustubh_Nawade_Resume.pdf": "/static/media/Kaustubh_Nawade_Resume.3adb644381ae678e6583.pdf",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -10,11 +10,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.9c396554.css.map": "/static/css/main.9c396554.css.map",
-    "main.ac212775.js.map": "/static/js/main.ac212775.js.map",
+    "main.ded701b1.js.map": "/static/js/main.ded701b1.js.map",
     "787.00faa099.chunk.js.map": "/static/js/787.00faa099.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9c396554.css",
-    "static/js/main.ac212775.js"
+    "static/js/main.ded701b1.js"
   ]
 }
