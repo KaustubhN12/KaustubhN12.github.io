@@ -30,6 +30,7 @@ import { ImLinkedin } from "react-icons/im";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
 import { useState } from "react";
+import emailjs from "emailjs-com"
 
 export default function Contact() {
 
@@ -37,20 +38,28 @@ export default function Contact() {
   const [email,setEmail] = useState("");
   const [msg,setMsg] = useState("");
 
-  const handleSubmit = () => {
+  // const handleSubmit = () => {
 
-    if(name==""||email==""||msg==""){
-      alert("plz fill all the fields");
-      return
-    }
+  //   if(name==""||email==""||msg==""){
+  //     alert("plz fill all the fields");
+  //     return
+  //   }
 
-    const payload={
-      name,
-      email,
-      msg
-    }
-    console.log(payload);
-  }
+  //   // const payload={
+  //   //   name,
+  //   //   email,
+  //   //   msg
+  //   // }
+  //   // console.log(payload);
+
+  //   emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+  //   .then((result) => {
+  //       console.log(result.text);
+  //   }, (error) => {
+  //       console.log(error.text);
+  //   });
+
+  // }
 
   return (
     <Container maxW="full" mt={0} centerContent overflow="hidden" id="contact">
@@ -173,7 +182,7 @@ export default function Contact() {
                         <Button
                           colorScheme={"teal"}
                           _hover={{boxShadow:"lg"}}
-                          onClick={handleSubmit}
+                          // onClick={handleSubmit}
                         >
                           Send Message
                         </Button>
