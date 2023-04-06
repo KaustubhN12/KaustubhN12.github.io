@@ -7,14 +7,22 @@ import {
   Link,
   Text,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import { BsMouse } from "react-icons/bs";
 import { ImLinkedin } from "react-icons/im";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiOutlineArrowDown, AiOutlineDownload } from "react-icons/ai";
 import Kaustubh_Nawade_Resume from "../Kaustubh_Nawade_Resume.pdf";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 const Home = () => {
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <>
       <Flex
@@ -26,7 +34,10 @@ const Home = () => {
         align={"center"}
         justify="center"
         gap={{ base: "4", md: "6", lg: "8" }}
-        marginBottom={["40px","0px","0px"]}
+        marginBottom={["40px", "0px", "0px"]}
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
       >
         <Flex
           maxWidth={{ base: "100%", lg: "40%" }}

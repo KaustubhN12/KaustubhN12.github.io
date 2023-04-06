@@ -5,14 +5,14 @@ import GitHubCalendar from "react-github-calendar";
 const Github = () => {
   return (
     <>
-      <Heading marginTop="30px" mb="2rem" textAlign={"center"}>
+      <Heading marginTop="50px" mb="2rem" textAlign={"center"}>
         Github Stats
       </Heading>
       <Box>
         <Box
           width={["330px", "450px", "870px"]}
           margin="auto"
-          marginBottom="30px"
+          marginBottom={["40px","60px","60px"]}
         >
           <GitHubCalendar
             username="KaustubhN12"
@@ -26,7 +26,7 @@ const Github = () => {
           justify={"center"}
           gap="7"
         >
-          <Box>
+          <Box data-aos="zoom-out-right">
             <Link href="https://github.com/KaustubhN12" />
             <Image
               id="github-streak-stats"
@@ -34,7 +34,7 @@ const Github = () => {
               src="https://github-readme-streak-stats.herokuapp.com?user=KaustubhN12&theme=dark"
             />
           </Box>
-          <Box>
+          <Box data-aos="zoom-out-down">
             <Link href="https://github.com/KaustubhN12" />
             <Image
               id="github-top-langs"
@@ -42,7 +42,7 @@ const Github = () => {
               src="https://github-readme-stats.vercel.app/api/top-langs/?username=KaustubhN12&layout=compact&theme=dark"
             />
           </Box>
-          <Box>
+          <Box data-aos="zoom-out-left">
             <Link href="https://github.com/KaustubhN12" />
             <Image
               width="500px"

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 
 const About = () => {
@@ -15,7 +15,11 @@ const About = () => {
         className="about section"
         flexDir={{ base: "column", md: "row", lg: "row" }}
       >
-        <Box width={{ base: "100%", md: "50%", lg: "35%" }} marginTop={"30px"}>
+        <Box
+          data-aos="fade-right"
+          width={{ base: "100%", md: "50%", lg: "35%" }}
+          marginTop={"30px"}
+        >
           <Image
             className="home-img"
             margin="auto"
@@ -31,6 +35,7 @@ const About = () => {
           alignContent="center"
           height="100%"
           width={{ base: "100%", md: "50%", lg: "65%" }}
+          data-aos="fade-left"
         >
           <Text id="user-detail-intro">
             A Full-Stack Web Developer specializing in MERN Stack with good

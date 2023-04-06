@@ -54,7 +54,7 @@ const Projects = () => {
         "chakra ui",
         "Node.js",
         "Mongo-DB",
-        "jwt-Authentication"
+        "jwt-Authentication",
       ],
       github: "https://github.com/KaustubhN12/dizzy-stitch-9009",
       demo: "https://doorstep-iota.vercel.app/",
@@ -95,7 +95,7 @@ const Projects = () => {
       >
         {projects.map((el) => {
           return (
-            <Box border="3px solid teal" height="auto">
+            <Box border="3px solid teal" height="auto" data-aos="zoom-in">
               <Image src={el.image} />
               <Box className="description" padding={"10px"}>
                 <Box className="project-tech-stack">

@@ -8,8 +8,7 @@ import {
   Link,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
-import { MoonIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
-// import Sidebar from "./Sidebar";
+import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Helmet } from "react-helmet";
 import Kaustubh_Nawade_Resume from "../Kaustubh_Nawade_Resume.pdf";
@@ -26,7 +25,13 @@ const Navbar = () => {
           <title>{`Kaustubh | ${title}`}</title>
         </Helmet>
       </div>
-      <Box id="nav-menu" pos={"sticky"} zIndex="7" top="0" textTransform={"capitalize"}>
+      <Box
+        id="nav-menu"
+        pos={"sticky"}
+        zIndex="7"
+        top="0"
+        textTransform={"capitalize"}
+      >
         <Flex
           justify={"space-between"}
           height="4rem"
@@ -117,8 +122,8 @@ const Navbar = () => {
             </Button>
           </Flex>
           <Box display={{ lg: "none" }} marginRight="10px">
-          <Sidebar />
-        </Box>
+            <Sidebar />
+          </Box>
         </Flex>
       </Box>
     </>

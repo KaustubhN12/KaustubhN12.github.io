@@ -31,31 +31,37 @@ import { HiOutlineMail } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
 import { useState } from "react";
 import emailjs from "emailjs-com";
-import { useToast } from '@chakra-ui/react'
+import { useToast } from "@chakra-ui/react";
 
 export default function Contact() {
-
   const toast = useToast();
 
-  const handleSubmit = async(e) => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-      e.preventDefault();
-
-  await emailjs.sendForm('service_pym1c3f', 'template_npcgdkl', e.target, 'Rb41FcMq-fbDOZtmM')
-    .then((result) => {
-      toast({
-        title: 'Message send Successfully.',
-        status: 'success',
-        duration: 9000,
-        isClosable: true,
-      })
-    }, (error) => {
-        console.log(error.text);
-    });
+    await emailjs
+      .sendForm(
+        "service_pym1c3f",
+        "template_npcgdkl",
+        e.target,
+        "Rb41FcMq-fbDOZtmM"
+      )
+      .then(
+        (result) => {
+          toast({
+            title: "Message send Successfully.",
+            status: "success",
+            duration: 9000,
+            isClosable: true,
+          });
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
 
     e.target.reset();
-    
-  }
+  };
 
   return (
     <Container maxW="full" mt={0} centerContent overflow="hidden" id="contact">
@@ -145,46 +151,63 @@ export default function Contact() {
                 <Box bg="#1a202c" borderRadius="lg">
                   <Box m={8}>
                     <VStack spacing={5}>
-                      <form onSubmit={handleSubmit} >
-                      <FormControl id="name">
-                        <FormLabel>Name</FormLabel>
-                        <InputGroup borderColor="#E0E1E7">
-                          <InputLeftElement
-                            pointerEvents="none"
-                            children={<BsPerson color="gray.800" />}
+                      <form onSubmit={handleSubmit}>
+                        <FormControl id="name">
+                          <FormLabel>Name</FormLabel>
+                          <InputGroup borderColor="#E0E1E7">
+                            <InputLeftElement
+                              pointerEvents="none"
+                              children={<BsPerson color="gray.800" />}
+                            />
+                            <Input
+                              name="user_name"
+                              required
+                              borderColor={"teal"}
+                              type="text"
+                              placeholder="Enter your name"
+                              size="md"
+                            />
+                          </InputGroup>
+                        </FormControl>
+                        <FormControl id="name">
+                          <FormLabel>Mail</FormLabel>
+                          <InputGroup borderColor="#E0E1E7">
+                            <InputLeftElement
+                              pointerEvents="none"
+                              children={<MdOutlineEmail color="gray.800" />}
+                            />
+                            <Input
+                              name="user_email"
+                              required
+                              borderColor={"teal"}
+                              type="email"
+                              placeholder="Enter you email"
+                              size="md"
+                            />
+                          </InputGroup>
+                        </FormControl>
+                        <FormControl id="name">
+                          <FormLabel>Message</FormLabel>
+                          <Textarea
+                            name="message"
+                            required
+                            borderColor={"teal"}
+                            _hover={{
+                              borderRadius: "gray.300",
+                            }}
+                            placeholder="message"
                           />
-                          <Input name="user_name"  required borderColor={"teal"} type="text" placeholder="Enter your name" size="md" />
-                        </InputGroup>
-                      </FormControl>
-                      <FormControl id="name">
-                        <FormLabel>Mail</FormLabel>
-                        <InputGroup borderColor="#E0E1E7">
-                          <InputLeftElement
-                            pointerEvents="none"
-                            children={<MdOutlineEmail color="gray.800" />}
-                          />
-                          <Input name="user_email"  required borderColor={"teal"} type="email" placeholder="Enter you email" size="md" />
-                        </InputGroup>
-                      </FormControl>
-                      <FormControl id="name">
-                        <FormLabel>Message</FormLabel>
-                        <Textarea name="message" required borderColor={"teal"}
-                          _hover={{
-                            borderRadius: "gray.300",
-                          }}
-                          placeholder="message"
-                        />
-                      </FormControl>
-                      <FormControl id="name" float="right">
-                        <Button
-                        type="submit"
-                        marginTop={"15px"}
-                          colorScheme={"teal"}
-                          _hover={{boxShadow:"lg"}}
-                        >
-                          Send Message
-                        </Button>
-                      </FormControl>
+                        </FormControl>
+                        <FormControl id="name" float="right">
+                          <Button
+                            type="submit"
+                            marginTop={"15px"}
+                            colorScheme={"teal"}
+                            _hover={{ boxShadow: "lg" }}
+                          >
+                            Send Message
+                          </Button>
+                        </FormControl>
                       </form>
                     </VStack>
                   </Box>
