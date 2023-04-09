@@ -13,7 +13,7 @@ import { ImLinkedin } from "react-icons/im";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiOutlineArrowDown, AiOutlineDownload } from "react-icons/ai";
-import Kaustubh_Nawade_Resume from "../Kaustubh_Nawade_Resume.pdf";
+import Kaustubh_Nawade_Resume from "../kaustubh_nawade_resume_.pdf";
 import Aos from "aos";
 import "aos/dist/aos.css";
 

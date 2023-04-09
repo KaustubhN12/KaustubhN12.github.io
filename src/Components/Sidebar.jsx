@@ -12,7 +12,7 @@ import {
 import React, { useState } from "react";
 import { useDisclosure } from "@chakra-ui/react";
 import { MoonIcon, SunIcon, HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import Kaustubh_Nawade_Resume from "../Kaustubh_Nawade_Resume.pdf";
+import Kaustubh_Nawade_Resume from "../kaustubh_nawade_resume_.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 
 const Sidebar = () => {
