@@ -184,11 +184,11 @@ const Skills = () => {
         fontWeight="600"
         margin="auto"
         textAlign="center"
-        marginTop={{ base: "30px", md: "20px", lg: "50px" }}
+        marginTop={{ base: "10px", md: "20px", lg: "50px" }}
       >
         Tech Stacks
       </Text>
-      <Box id="skills" height={["45vh", "40vh", "60vh"]}>
+      <Box id="skills" height={["40vh", "40vh", "55vh"]}>
         <Box className="mainContainer" marginTop={"20px"}>
           <Slider {...settings}>
             {Skills.map((el) => {

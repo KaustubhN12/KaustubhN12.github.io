@@ -34,7 +34,7 @@ const Home = () => {
         align={"center"}
         justify="center"
         gap={{ base: "4", md: "6", lg: "8" }}
-        marginBottom={["40px", "0px", "0px"]}
+        marginBottom={["20px", "0px", "0px"]}
         data-aos="fade-down"
         data-aos-easing="linear"
         data-aos-duration="1500"
