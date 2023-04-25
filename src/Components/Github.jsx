@@ -30,7 +30,7 @@ const Github = () => {
             <Link href="https://github.com/KaustubhN12" />
             <Image
               id="github-streak-stats"
-              width="500px"
+              width="390px"
               src="https://github-readme-streak-stats.herokuapp.com?user=KaustubhN12&theme=dark"
             />
           </Box>
@@ -38,14 +38,14 @@ const Github = () => {
             <Link href="https://github.com/KaustubhN12" />
             <Image
               id="github-top-langs"
-              width="500px"
+              width="390px"
               src="https://github-readme-stats.vercel.app/api/top-langs/?username=KaustubhN12&layout=compact&theme=dark"
             />
           </Box>
           <Box data-aos="zoom-out-left">
             <Link href="https://github.com/KaustubhN12" />
             <Image
-              width="500px"
+              width="390px"
               id="github-stats-card"
               src="https://github-readme-stats.vercel.app/api?username=KaustubhN12&count_private=true&show_icons=true&theme=dark"
             />
