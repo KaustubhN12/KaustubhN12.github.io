@@ -61,13 +61,13 @@ const Projects = () => {
     },
     {
       id: 5,
-      name: "Fitness Blender",
+      name: "Todo App",
       description:
-        "Fitness Blender is a fitness website that provides workout programs for fitness",
-      image: "https://i.ibb.co/Ydhvg24/Screenshot-1848.png",
+        "This is a simple web application that I created using HTML, CSS, and JavaScript. It allows users to create, edit, and delete tasks that they need to accomplish.",
+      image: "https://i.ibb.co/JK97q29/Screenshot-2255.png" ,
       techStack: ["HTML", "CSS", "Javascript"],
       github: "https://github.com/MrVivek30/violet-support-6758",
-      demo: "https://relaxed-douhua-b76152.netlify.app/",
+      demo: "https://tubular-kitten-001b69.netlify.app/",
     },
   ];
 
@@ -84,9 +84,10 @@ const Projects = () => {
       </Text>
       <Box
         // height={["325vh", "190vh", "135vh"]}
-        height={{ base: "195vh", md: "135vh", lg: "135vh" }}
+        height={{ base: "200vh", md: "135vh", lg: "135vh" }}
         // marginBottom={{ base: "870px", md: "20px", lg: "0px" }}
-        marginBottom={['55em', '0em', '0em', '0em', '0em', '0em']}
+        // marginBottom={['55em', '0em', '0em', '0em', '0em', '0em']}
+        marginBottom={['50em', '0em', '0em']}
         display="grid"
         gridTemplateColumns={[
           "repeat(1,1fr)",
@@ -98,7 +99,7 @@ const Projects = () => {
       >
         {projects.map((el) => {
           return (
-            <Box border="3px solid teal" height="auto" data-aos="zoom-in">
+            <Box border="3px solid teal" height="auto" >
               <Image src={el.image} />
               <Box className="description" padding={"10px"}>
                 <Box className="project-tech-stack">
