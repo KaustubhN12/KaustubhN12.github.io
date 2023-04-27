@@ -79,6 +79,8 @@ const Projects = () => {
         fontWeight="600"
         margin="auto"
         textAlign="center"
+        marginBottom={"40px"}
+        marginTop={"10px"}
       >
         Projects
       </Text>
