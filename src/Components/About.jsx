@@ -8,7 +8,7 @@ const About = () => {
         About me
       </Text>
       <Flex
-        height={{ base: "90vh", md: "60vh", lg: "55vh" }}
+        height={{ base: "85vh", md: "60vh", lg: "55vh" }}
         width="85%"
         margin="auto"
         id="about"
