@@ -26,7 +26,7 @@ const Home = () => {
   return (
     <>
       <Flex
-        height={{ base: "80vh", lg: "100vh" }}
+        height={{ lg: "100vh" }}
         maxHeight={"750px"}
         className="background"
         id="home"
@@ -34,7 +34,7 @@ const Home = () => {
         align={"center"}
         justify="center"
         gap={{ base: "4", md: "6", lg: "8" }}
-        marginBottom={["20px", "0px", "0px"]}
+        marginBottom={["30px", "0px", "0px"]}
         data-aos="fade-down"
         data-aos-easing="linear"
         data-aos-duration="1500"

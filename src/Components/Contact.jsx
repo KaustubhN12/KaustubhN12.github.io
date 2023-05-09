@@ -17,6 +17,7 @@ import {
   InputLeftElement,
   Textarea,
   Link,
+  useColorMode
 } from "@chakra-ui/react";
 import {
   MdPhone,
@@ -35,7 +36,7 @@ import { useToast } from "@chakra-ui/react";
 
 export default function Contact() {
   const toast = useToast();
-
+  const { colorMode, toggleColorMode } = useColorMode();
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -67,8 +68,9 @@ export default function Contact() {
     <Container maxW="full" mt={0} centerContent overflow="hidden" id="contact">
       <Flex>
         <Box
-          bg="#1a202c"
-          color="white"
+          bg={colorMode === "dark" ? "#1a202c" : "white"}
+
+          color={colorMode === "dark" ? "white" : "black"}
           borderRadius="lg"
           m={{ sm: 4, md: 16, lg: 10 }}
           p={{ sm: 5, md: 5, lg: 16 }}
@@ -88,9 +90,10 @@ export default function Contact() {
                         id="contact-phone"
                         height="48px"
                         variant="ghost"
-                        color="#DCE2FF"
+                        // color="#DCE2FF"
+                        color={colorMode === "dark" ? "#DCE2FF" : "black"}
                         _hover={{ border: "2px solid #81e6d9" }}
-                        leftIcon={<MdPhone color="#81e6d9" size="20px" />}
+                        leftIcon={<MdPhone color={colorMode === "dark" ? "#81e6d9" : "black"}  size="20px" />}
                       >
                         +91-9834143462
                       </Button>
@@ -98,10 +101,10 @@ export default function Contact() {
                         size="md"
                         height="48px"
                         variant="ghost"
-                        color="#DCE2FF"
+                        color={colorMode === "dark" ? "#DCE2FF" : "black"}
                         id="contact-email"
                         _hover={{ border: "2px solid #81e6d9" }}
-                        leftIcon={<MdEmail color="#81e6d9" size="20px" />}
+                        leftIcon={<MdEmail color={colorMode === "dark" ? "#81e6d9" : "black"} size="20px" />}
                       >
                         nawadekaustubh@gmail.com
                       </Button>
@@ -109,9 +112,9 @@ export default function Contact() {
                         size="md"
                         height="48px"
                         variant="ghost"
-                        color="#DCE2FF"
+                        color={colorMode === "dark" ? "#DCE2FF" : "black"}
                         _hover={{ border: "2px solid #81e6d9" }}
-                        leftIcon={<MdLocationOn color="#81e6d9" size="20px" />}
+                        leftIcon={<MdLocationOn color={colorMode === "dark" ? "#81e6d9" : "black"} size="20px" />}
                       >
                         Wardha, India
                       </Button>
@@ -148,7 +151,7 @@ export default function Contact() {
                 </Box>
               </WrapItem>
               <WrapItem>
-                <Box bg="#1a202c" borderRadius="lg">
+                <Box bg={colorMode === "dark" ? "#1a202c" : "white"} borderRadius="lg">
                   <Box m={8}>
                     <VStack spacing={5}>
                       <form onSubmit={handleSubmit}>

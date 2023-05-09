@@ -11,9 +11,9 @@ import Skills from './Components/Skills';
 function App() {
   return (
     <>
-    <Box maxW={"100vw"}>
+    <Box maxW={"100%"}>
       <Navbar />
-      <Box maxWidth={{ base: "96vw", lg: "90vw" }} margin="auto">
+      <Box maxWidth={{ base: "96%", lg: "90%" }} margin="auto">
         <Home />
         <About/>
         <Skills/>

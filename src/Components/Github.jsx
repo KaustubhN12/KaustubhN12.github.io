@@ -12,13 +12,14 @@ const Github = () => {
        mb="2rem" 
        textAlign={"center"} 
        marginBottom={"60px"}
-       marginTop="90px"
+       marginTop="60px"
+      // border={"1px solid white"}
        >
         Github Stats 
       </Heading> 
       <Box>
         <Box
-          width={["250px", "430px", "870px"]}
+          width={["270px", "430px", "870px"]}
           margin="auto"
           marginBottom={["40px","60px","60px"]}
         >
@@ -38,7 +39,7 @@ const Github = () => {
             <Link href="https://github.com/KaustubhN12" />
             <Image
               id="github-streak-stats"
-              width={["auto","300px","390px"]}
+              width={["270px","300px","390px"]}
               src="https://github-readme-streak-stats.herokuapp.com?user=KaustubhN12&theme=dark"
             />
           </Box>
@@ -46,14 +47,14 @@ const Github = () => {
             <Link href="https://github.com/KaustubhN12" />
             <Image
               id="github-top-langs"
-              width={["auto","300px","390px"]}
+              width={["270px","300px","390px"]}
               src="https://github-readme-stats.vercel.app/api/top-langs/?username=KaustubhN12&layout=compact&theme=dark"
             />
           </Box>
           <Box data-aos="zoom-out-left">
             <Link href="https://github.com/KaustubhN12" />
             <Image
-              width={["auto","300px","390px"]}
+              width={["270px","300px","390px"]}
               id="github-stats-card"
               src="https://github-readme-stats.vercel.app/api?username=KaustubhN12&count_private=true&show_icons=true&theme=dark"
             />

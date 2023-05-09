@@ -80,16 +80,17 @@ const Projects = () => {
         margin="auto"
         textAlign="center"
         marginBottom={"40px"}
-        marginTop={"10px"}
+        marginTop={"30px"}
       >
         Projects
       </Text>
       <Box
         // height={["325vh", "190vh", "135vh"]}
-        height={{ base: "195vh", md: "135vh", lg: "135vh" }}
+        // height={{ base: "195vh", md: "135vh", lg: "135vh" }}
         // marginBottom={{ base: "870px", md: "20px", lg: "0px" }}
         // marginBottom={['55em', '0em', '0em', '0em', '0em', '0em']}
-        marginBottom={['50em', '0em', '0em']}
+        // border={"1px solid white"}
+        // marginBottom={['50em', '0em', '0em']}
         display="grid"
         gridTemplateColumns={[
           "repeat(1,1fr)",
