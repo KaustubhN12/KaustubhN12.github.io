@@ -178,7 +178,7 @@ const Skills = () => {
     },
   ];
   return (
-    <>
+    <Box id="skills" >
       <Text
         fontSize="4xl"
         fontWeight="600"
@@ -188,7 +188,7 @@ const Skills = () => {
       >
         Tech Stacks
       </Text>
-      <Box id="skills" 
+      <Box 
       // height={["40vh", "40vh", "55vh"]}
       >
         <Box className="mainContainer" marginTop={"20px"}>
@@ -229,7 +229,7 @@ const Skills = () => {
           </Slider>
         </Box>
       </Box>
-    </>
+    </Box>
   );
 };
 

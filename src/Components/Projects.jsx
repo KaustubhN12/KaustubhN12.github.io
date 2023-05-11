@@ -123,8 +123,8 @@ const Projects = () => {
                   {el.name}
                 </Text>
                 <Text marginBottom={"10px"}>{el.description}</Text>
-                <Flex justifyContent="space-around" marginBottom={"0px"}>
-                  <Box>
+                <Flex justifyContent="space-around" marginBottom={"0px"} >
+                  <Box margin={"5px"}>
                     <Link href={el.demo} isExternal>
                       <Button>
                         Demo
@@ -134,7 +134,7 @@ const Projects = () => {
                       </Button>
                     </Link>
                   </Box>
-                  <Box>
+                  <Box margin={"5px"}> 
                     <Link href={el.github} isExternal>
                       <Button>
                         Github
