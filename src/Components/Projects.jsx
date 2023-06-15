@@ -50,9 +50,9 @@ const Projects = () => {
       techStack: [
         "React Js",
         "Redux-Thunk",
-        "Firebase",
         "chakra ui",
         "Node.js",
+        "express.js",
         "Mongo-DB",
         "jwt-Authentication",
       ],
@@ -68,6 +68,16 @@ const Projects = () => {
       techStack: ["HTML", "CSS", "Javascript"],
       github: "https://github.com/MrVivek30/violet-support-6758",
       demo: "https://tubular-kitten-001b69.netlify.app/",
+    },
+    {
+      id: 6,
+      name: "Battlefield",
+      description:
+        "Welcome to Battlefield, a multiplayer 2D game created with the MERN stack! Join the battlefield and engage in thrilling real-time battles with other players.",
+      image: "https://i.ibb.co/2shMwj8/Screenshot-2103.png" ,
+      techStack: ["react.js", "socket.io", "tailwind css","node.js"],
+      github: "https://github.com/khanahmad4527/battlefield",
+      demo: "https://battlefield-one.vercel.app/",
     },
   ];
 

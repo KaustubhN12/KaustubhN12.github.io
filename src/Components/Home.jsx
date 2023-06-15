@@ -48,10 +48,10 @@ const Home = () => {
           <Heading id="user-detail-name">Hi I am Kaustubh</Heading>
           <Text fontSize={"1.4rem"}>Full stack web developer</Text>
           <Text>
-            Aspiring Full Stack Web Developer Skilled in MERN stack with
+            A Full Stack Web Developer Skilled in MERN stack with
             hands-on experience in developing scalable websites using a wide
             range of Front-end and Back-end skills like HTML, CSS, JavaScript,
-            React, MongoDB, and Node JS. Looking forward to joining a
+            React, MongoDB, Express JS, Node JS and solid understanding of Data Structures and Algorithms. Looking forward to joining a
             progressive organization with opportunities to work on challenging
             projects.
           </Text>
